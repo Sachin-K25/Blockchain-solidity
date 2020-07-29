@@ -1,0 +1,6 @@
+SmartContract 1 details : Address of the SmartContract :0x495ce0307f396a1ac220a9a569c8685163bb6665
+link :https://ropsten.etherscan.io/tx/0xa109ea4ea4ff58c719c948b75bcb62b0b038d0388b2d6d6d4cbb2ca141691b50
+
+SmartContract 2 details : Address of the SmartContract :0xb6002e3cd8738ea5c262de021d3f33ef2d1b67ac
+https://ropsten.etherscan.io/tx/0xba175c8cc5c67bdf2d1ce58221a917fb2e98fd99e188cb6459fe22d3a204dafb
+
