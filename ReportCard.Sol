@@ -1,0 +1,40 @@
+//Have used solidity programming languae to create a simple smart contract of a student report card and validating it and providing the status.
+//Have used Ropster network to launch my smartcontract using ether
+
+pragma solidity ^0.4.17;
+
+contract ReportCar{
+    
+    string public Name;
+    uint public Rollno;
+    string public Batch;
+    int Marks1; 
+    int Marks2;
+    int Marks3;
+    int Marks4;
+    int Result;
+    string public status;
+ 
+ function ReportCar(string newName, uint newrollno, string newBatch,  int newm1 , int newm2, int newm3 ,int newm4) public{
+     Name = newName;
+     Rollno = newrollno;
+     Batch = newBatch;
+     Marks1 =newm1;
+     Marks2 =newm2;
+     Marks3 = newm3;
+     Marks4 =newm4;
+     
+     if(newm1+newm2+newm3+newm4 < 160){
+         status = 'FAIL';
+     }
+     else {
+         Result = (newm1 + newm2 + newm3 + newm4) *100/400;
+         status = 'PASS';
+         
+     }
+     
+ }  
+ function getMarks() public view returns(int,int,int,int){
+        return (Marks1, Marks2, Marks3, Marks4);
+    }
+}
